@@ -1,25 +1,24 @@
-# E-Commerce-Supply-Chain-Intelligence
 # 📊 E-Commerce Supply Chain Intelligence Dashboard
 
-An end-to-end Business Intelligence dashboard built using **MySQL, SQL, Python, Streamlit, Plotly, and Pandas**. This project analyzes over **100,000+ e-commerce transactions** from the Brazilian Olist dataset to generate actionable business insights across sales, customers, products, reviews, and supply chain operations.
+An end-to-end Business Intelligence dashboard built using **MySQL, SQL, Python, Streamlit, Plotly, Pandas, SQLAlchemy, and PyMySQL**. The project analyzes over **100,000+ e-commerce transactions** from the Brazilian Olist dataset to generate actionable insights across sales, customers, products, reviews, and supply chain operations.
 
 ---
 
 ## 🚀 Features
 
-- 📈 Executive Dashboard with business KPIs
-- 👥 Customer Analytics
-- 💰 Sales Analytics
-- 🚚 Supply Chain Analytics
-- ⭐ Review Analytics
-- 📦 Product Analytics
-- 📊 30+ Interactive Charts and KPIs
-- 🗄️ SQL-based Data Cleaning & Analysis
-- 📱 Interactive Streamlit Web Application
+- Executive Dashboard with business KPIs
+- Customer Analytics Dashboard
+- Sales Analytics Dashboard
+- Supply Chain Analytics Dashboard
+- Review Analytics Dashboard
+- Product Analytics Dashboard
+- 30+ interactive KPIs and visualizations
+- SQL-based data cleaning and analytical workflows
+- Responsive multi-page Streamlit application
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
 - Python
 - MySQL
@@ -34,28 +33,28 @@ An end-to-end Business Intelligence dashboard built using **MySQL, SQL, Python, 
 
 ## 📂 Dataset
 
-This project uses the **Brazilian E-Commerce Public Dataset by Olist**.
+This project uses the **Brazilian E-Commerce Public Dataset (Olist)**.
 
-Dataset includes:
+The dataset includes:
 
 - Customers
 - Orders
 - Order Items
 - Payments
-- Reviews
 - Products
 - Sellers
+- Reviews
 - Geolocation
 - Product Category Translation
 
-More than **100,000+ orders** were analyzed.
+Total records analyzed: **100,000+ e-commerce transactions**
 
 ---
 
 ## 📁 Project Structure
 
 ```
-E-Commerce-Supply-Chain-Intelligence
+E-Commerce-Supply-Chain-Intelligence/
 │
 ├── app.py
 ├── requirements.txt
@@ -95,113 +94,96 @@ E-Commerce-Supply-Chain-Intelligence
 ## 📊 Dashboards
 
 ### 🏠 Executive Dashboard
-
-- Revenue
-- Orders
-- Customers
-- Sellers
+- Business KPIs
+- Revenue Analysis
 - Monthly Revenue Trend
-- Payment Methods
-- Top Categories
+- Payment Method Distribution
+- Top Product Categories
 - Orders by State
 
----
-
 ### 👥 Customer Analytics
-
 - Customer Growth
-- Repeat Customers
+- Repeat Customer Analysis
 - Customer Segmentation
 - Top Customers
-- State-wise Customers
-
----
+- Customer Distribution by State
 
 ### 💰 Sales Analytics
-
-- Monthly Sales
-- Revenue KPIs
-- Payment Analysis
+- Monthly Revenue Trend
+- Category-wise Revenue
 - Top Sellers
-- Product Category Revenue
-
----
+- Payment Analysis
+- Top Products
 
 ### 🚚 Supply Chain Analytics
-
 - Delivery Performance
-- Freight Analysis
+- Freight Cost Analysis
 - Delivery Status
 - Seller Performance
 - Shipping Cost Analysis
 
----
-
 ### ⭐ Review Analytics
-
-- Review Distribution
-- Monthly Reviews
-- Product Ratings
-- Review Score Analysis
-
----
+- Review Score Distribution
+- Monthly Review Trend
+- Category Ratings
+- Review Score Share
+- Recent Customer Reviews
 
 ### 📦 Product Analytics
-
-- Product Categories
-- Product Dimensions
-- Product Weight Distribution
-- Product Photos Analysis
+- Product Category Distribution
+- Product Weight Analysis
+- Product Dimension Analysis
+- Product Photo Analysis
 - Top Revenue Products
 
 ---
 
-## 📈 Key Insights
+## 📈 Key Highlights
 
-- Processed **100K+** e-commerce transactions
-- Built **30+ business KPIs**
-- Designed **6 interactive dashboards**
-- Implemented SQL-based data cleaning and analytical workflows
-- Built a normalized relational database using MySQL
-- Created reusable SQL queries and dashboard visualizations
+- Designed a normalized **MySQL relational database**
+- Imported and processed **100,000+ e-commerce transactions**
+- Developed **10 SQL scripts** for setup, cleaning, EDA, and analytics
+- Built **6 interactive Streamlit dashboards**
+- Created **30+ KPIs and visualizations**
+- Implemented reusable SQL queries using SQLAlchemy and Pandas
 
 ---
 
 ## ⚙️ Installation
 
-Clone the repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/jsankhla67/E-Commerce-Supply-Chain-Intelligence.git
 ```
 
-Go inside the project
+### Navigate to the project directory
 
 ```bash
 cd E-Commerce-Supply-Chain-Intelligence
 ```
 
-Create a virtual environment
+### Create a virtual environment
 
 ```bash
 python3 -m venv .venv
 ```
 
-Activate it
+### Activate the virtual environment
 
-Mac/Linux
+**macOS/Linux**
 
 ```bash
 source .venv/bin/activate
 ```
 
-Windows
+**Windows**
 
 ```bash
 .venv\Scripts\activate
 ```
 
-Install dependencies
+### Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -212,7 +194,8 @@ pip install -r requirements.txt
 ## 🗄️ Database Setup
 
 1. Create a MySQL database.
-2. Execute SQL scripts in the following order:
+2. Import the Olist dataset into the `data/raw` folder.
+3. Execute the SQL scripts in the following order:
 
 ```
 01_setup.sql
@@ -227,7 +210,7 @@ pip install -r requirements.txt
 10_views.sql
 ```
 
-3. Update database credentials inside:
+4. Update the database connection details inside:
 
 ```
 utils/database.py
@@ -237,11 +220,13 @@ utils/database.py
 
 ## ▶️ Run the Application
 
+Start the Streamlit application:
+
 ```bash
 streamlit run app.py
 ```
 
-Open:
+Open your browser and visit:
 
 ```
 http://localhost:8501
@@ -249,29 +234,13 @@ http://localhost:8501
 
 ---
 
-## 📷 Dashboard Preview
-
-Add screenshots inside the **images/** folder and display them here.
-
-Example:
-
-```markdown
-![Executive Dashboard](images/executive_dashboard.png)
-
-![Customer Dashboard](images/customer_dashboard.png)
-
-![Sales Dashboard](images/sales_dashboard.png)
-```
-
----
-
-## 🎯 Future Improvements
+## 📌 Future Improvements
 
 - Deploy on Streamlit Community Cloud
-- Add Machine Learning Sales Forecasting
+- Sales Forecasting using Machine Learning
 - Customer Churn Prediction
-- Inventory Optimization
-- Real-time Dashboard using APIs
+- Inventory Demand Forecasting
+- Real-time Dashboard with API Integration
 
 ---
 
@@ -279,10 +248,10 @@ Example:
 
 **Jatin Sankhla**
 
-GitHub: https://github.com/jsankhla67
-
-LinkedIn: *(Add your LinkedIn profile here)*
+- GitHub: https://github.com/jsankhla67
 
 ---
 
-## ⭐ If you found this project useful, consider giving it a star!
+## 📄 License
+
+This project is developed for educational and portfolio purposes.
