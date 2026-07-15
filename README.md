@@ -231,17 +231,6 @@ Open your browser and visit:
 ```
 http://localhost:8501
 ```
-
----
-
-## 📌 Future Improvements
-
-- Deploy on Streamlit Community Cloud
-- Sales Forecasting using Machine Learning
-- Customer Churn Prediction
-- Inventory Demand Forecasting
-- Real-time Dashboard with API Integration
-
 ---
 
 ## 👨‍💻 Author
